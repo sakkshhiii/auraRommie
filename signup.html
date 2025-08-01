@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AuraRoomie - Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Join AuraRoomie 🌸</h2>
+      <p>Let's match you with your perfect vibe twin!</p>
+    </header>
+
+    <form id="signupForm" action="/signup" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="password" name="password" placeholder="Create Password" required />
+
+      <textarea name="intro" placeholder="Introduce yourself (likes, dislikes, personality traits)" required></textarea>
+      
+      <textarea name="roommatePrefs" placeholder="What are you looking for in a roommate?" required></textarea>
+
+      <label>
+        <input type="checkbox" name="quiz" />
+        Take a quick personality quiz (optional)
+      </label>
+
+      <label>
+        <input type="checkbox" name="voiceIntro" />
+        Add a voice intro (use mic on next step)
+      </label>
+
+      <button type="submit">Sign Me Up 🚀</button>
+    </form>
+
+    <footer>
+      <small>Already have an account? <a href="login.html">Log in here</a></small>
+    </footer>
+  </div>
+</body>
+</html>
