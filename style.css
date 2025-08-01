@@ -1,0 +1,158 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fce4ec, #f8bbd0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+header h1,
+header h2 {
+  color: #d81b60;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 12px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  resize: vertical;
+  min-height: 44px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  justify-content: start;
+}
+
+input[type="checkbox"] {
+  accent-color: #d81b60;
+  width: 18px;
+  height: 18px;
+}
+
+button {
+  background-color: #d81b60;
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ad1457;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #d81b60;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #ad1457;
+}
+
+#start-voice {
+  background-color: #ec407a;
+  margin-bottom: 16px;
+}
+
+#voice-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+footer small {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-top: 10px;
+}
+
+footer small a {
+  color: #d81b60;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer small a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  header h1,
+  header h2 {
+    font-size: 24px;
+  }
+
+  input,
+  textarea {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
